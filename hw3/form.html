@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML Form</title>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="custom.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript"></script>
+</head>
+<body class="body-move-left">
+<form>
+	<div id="container">
+		<div>
+			<h2>Please Fill out this form below to begin downloading.</h2>
+		</div>
+		<hr>
+		<div>
+			<div class="in-row">
+				<label>First Name :* </label>
+			</div>
+			<div class="in-row">
+				<input type="text" name="txtFname" class="move-left "/>
+			</div>
+			<div class="in-row">
+				<label>Company:* </label>
+			</div>
+			<div>
+				<input type="text" name="txtCompany" class="move-left"/>
+			</div>
+		</div>
+
+		<div class="new-row">
+			<div class="in-row">
+				<label>Last Name :* </label>
+			</div>
+			<div class="in-row">
+				<input type="text" name="txtLname" class="move-left"/>
+			</div>
+			<div class="in-row">
+				<label>Website:* </label>
+			</div>
+			<div>
+				<input type="text" name="txtWebsite" class="move-left"/>
+			</div>
+		</div>
+
+		<div class="new-row">
+			<div class="in-row">
+				<label>Email:* </label>
+			</div>
+			<div class="in-row">
+				<input type="email" name="txtEmail" class="move-left"/>
+			</div>
+			<div class="in-row">
+				<label>Position:* </label>
+			</div>
+			<div>
+				<input type="text" name="txtPosition" class="move-left"/>
+			</div>
+		</div>
+		<div class="new-row">
+			<div class="in-row">
+				<label>Password:* </label>
+			</div>
+			<div class="in-row">
+				<input type="password" name="txtPassword" class="move-left"/>
+			</div>
+			<div class="in-row">
+				<label>Phone:* </label>
+			</div>
+			<div>
+				<input type="text" name="txtPhone" class="move-left"/>
+			</div>
+		</div>
+		<div>
+			<p>*Setting your password will allow you to log back and see our
+				document any time.</p>
+		</div>
+		<hr>
+
+		<div>
+			<h4>Primary service or product of interest: *</h4>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button"
+					data-toggle="dropdown">
+					Select One<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<h4>Other services or product of interest:</h4>
+			<input type="checkbox" name="vehicle" value="onlineStratergy">
+			Online Stratergy<br> <input type="checkbox" name="web"
+				value="web"> Web Design and Development<br> <input
+				type="checkbox" name="socialCommunity" value="socialCommunity">Social
+			Netowrking and Online Community<br> <input type="checkbox"
+				name="integratedCampaign" value="integratedCampaign">Integrated
+			online campaigns.<br> <input type="checkbox"
+				name="emailServices" value="emailServices">Email marketing
+			services (Stratergy, Design, Development)<br> <input
+				type="checkbox" name="emailSoftware" value="emailSoftware">Email
+			marketing softwares.<br>
+		</div>
+		<hr>
+		<div>
+			<h4>when are you looking to implement the solution?*</h4>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button"
+					data-toggle="dropdown">
+					Select One<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<h4>Yes ! subscribe to email marketing news.</h4>
+			<input type="checkbox" name="receiveEmail" value="receiveEmail">Receive feature and best practice articles on mail marketing, Interactive design and online stratergy.<br>
+		</div>
+		<div>
+			<input type ="submit" value="Save" class="btn btn-default" />
+		</div>
+	</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+.in-row{
+	float : left;
+	margin-left : 20px;
+}
+.move-left{
+	margin-left: 20px;	
+}
+.new-row{
+	margin-top :10px;	
+}
+.body-move-left{
+	margin-left : 15px;
+	background-color: #4C4C4C;
+	color : white;
+}
