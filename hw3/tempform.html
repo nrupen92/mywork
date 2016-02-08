@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML Form</title>
+	<link rel="stylesheet" href="custom.css">
+<script type="text/javascript" src="../assets/js/web-sql.js"></script>
+</head>
+<body class="body-move-left">
+<form method="post">
+	<div id="container">
+		
+			<h2>Please Fill out this form below to begin downloading.</h2>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="in-row">
+				<label>First Name :* </label>
+			</div>
+			<div class="in-row">
+				<input type="text" id="txtFname" class="move-left " required autofocus/>
+			</div>
+			<div class="in-row">
+				<label>Company:* </label>
+			</div>
+			<div>
+				<input type="text" id="txtCompany" class="move-left" required autofocus/>
+			</div>
+		</div>
+
+		<div class="new-row row">
+			<div class="in-row">
+				<label>Last Name :* </label>
+			</div>
+			<div class="in-row">
+				<input type="text" id="txtLname" class="move-left" required autofocus/>
+			</div>
+			<div class="in-row">
+				<label>Website:* </label>
+			</div>
+			<div>
+				<input type="text" id="txtWebsite" class="move-left" required autofocus/>
+			</div>
+		</div>
+
+		<div class="new-row row">
+			<div class="in-row">
+				<label>Email:* </label>
+			</div>
+			<div class="in-row">
+				<input type="email" id="txtEmail" class="move-left" required autofocus/>
+			</div>
+			<div class="in-row">
+				<label>Position:* </label>
+			</div>
+			<div>
+				<select required class="dropdown-select font-color" id = "dropdown1">
+					<option value="">Select One</option>
+					<option value="option 1">Option 1</option>
+					<option value="option 2">Option 2</option>
+					<option value="option 3">Option 3</option>
+				</select>
+			</div>
+		</div>
+		<div class="new-row row">
+			<div class="in-row">
+				<label>Password:* </label>
+			</div>
+			<div class="in-row">
+				<input type="password" id="txtPassword" class="move-left" required autofocus/>
+			</div>
+			<div class="in-row">
+				<label>Phone:* </label>
+			</div>
+			<div>
+				<input type="text" id="txtPhone" class="move-left" required autofocus/>
+			</div>
+		</div>
+		<div>
+			<p>*Setting your password will allow you to log back and see our
+				document any time.</p>
+		</div>
+		<hr>
+
+		<div>
+			<h4>Primary service or product of interest: *</h4>
+			<div>
+				<select required class="dropdown-select font-color" id = "dropdown2">
+					<option value="">Select One</option>
+					<option value="option 1">Option 1</option>
+					<option value="option 2">Option 2</option>
+					<option value="option 3">Option 3</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<h4>Other services or product of interest:</h4>
+			<input type="checkbox" name="onlineStratergy" value="onlineStratergy" id="checkbox1">
+			Online Stratergy<br> <input type="checkbox" name="web"
+				value="web" id="checkbox2"> Web Design and Development<br> <input
+				type="checkbox" name="socialCommunity" value="socialCommunity" id="checkbox3">Social
+			Netowrking and Online Community<br> <input type="checkbox"
+				name="integratedCampaign" value="integratedCampaign" id="checkbox4">Integrated
+			online campaigns.<br> <input type="checkbox"
+				name="emailServices" value="emailServices" id="checkbox5">Email marketing
+			services (Stratergy, Design, Development)<br> <input
+				type="checkbox" name="emailSoftware" value="emailSoftware" id="checkbox6">Email
+			marketing softwares.<br>
+		</div>
+		<hr>
+		<div>
+			<h4>when are you looking to implement the solution?*</h4>
+			<div>
+				<select required class="dropdown-select font-color" id = "dropdown3">
+					<option value="">Select One</option>
+					<option value="option 1">Option 1</option>
+					<option value="option 2">Option 2</option>
+					<option value="option 3">Option 3</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<h4>Yes ! subscribe to email marketing news.</h4>
+			<input type="checkbox" name="receiveEmail" value="receiveEmail" id="receiveEmail">Receive feature and best practice articles on mail marketing, Interactive design and online stratergy.<br>
+		</div>
+		<div class="new-row">
+			<input type ="submit" value="Save" class="btn btn-default" onclick="saveData()"/>
+		</div>
+	</div>
+	</form>
+</body>
+</html>
