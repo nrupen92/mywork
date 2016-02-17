@@ -1,4 +1,4 @@
-//#!/usr/bin/env node
+#!/usr/bin/env node
 // - Node.js installation
 // - The module websocekt is installed by this command
 //    npm install -g websocket
@@ -9,7 +9,7 @@
 //       var WebSocketServer = require("ws").Server 
 // - Please refer Zhomart Mukhamejanov's example if you want to deploy server.js on Heroku
 // - Please refer Vidit Mody's use of ws protocol
-var WebSocketServer = require('C:/Users/Henry/AppData/Roaming/npm/node_modules/websocket').server;
+var WebSocketServer = require('/usr/local/lib/node_modules/websocket').server;
 var http = require('http');
 
 var server = http.createServer(function(request, response) {
@@ -56,7 +56,9 @@ wsServer.on('request', function(request) {
     connection.on('message', function(message) {
         if (message.type === 'utf8') {
             console.log('Received Message: ' + message.utf8Data);
-            connection.sendUTF(message.utf8Data);
+            connection.sendUTF("I am fine");
+			console.log("Message sent to client");
+			
         }
         else if (message.type === 'binary') {
             console.log('Received Binary Message of ' 
@@ -73,3 +75,4 @@ wsServer.on('request', function(request) {
                    + connection.remoteAddress + ' disconnected.');
     });
 });
+    
