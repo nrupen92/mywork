@@ -1,0 +1,39 @@
+#container {
+	margin: auto;
+	width: 60%;
+}
+
+.left-container {
+	display: inline;
+	float: left;
+	width: 50%;
+}
+
+
+
+body {
+	margin-left: 15px;
+	
+	font-family: cursive;
+}
+
+
+.left-move {
+	display: inline;
+	float: left;
+	width: 80px;
+}
+
+
+.btn{
+	background-color:yellow;
+	border-radius: 15px;
+	width : 150px;
+	margin-top  : 20px;
+	font-family: cursive;
+	font-size: 18px;
+}
+
+.row {
+	margin: 20px;
+}

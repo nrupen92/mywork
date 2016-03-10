@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mid-term Exam</title>
+</head>
+<link rel="stylesheet" href="custom.css">
+<script type="text/javascript" src="../assets/js/web-sql-exam.js"></script>
+<body>
+	<div class="container">
+		<form action="#" method="post" onsubmit="saveData()" >
+
+			<div class="row">
+				<div class="left-move">
+					<label>Color: </label>
+				</div>
+				<div>
+					<input type="color" name="userColor" required id="userColor" >
+				</div>
+			</div>
+			<div class="row">
+				<div class="left-move">
+					<label>Number : </label>
+				</div>
+				<div>
+					<input type="number" name="userNumber" min="0" max="130" required id="userNumber">
+				</div>
+			</div>
+			<div class="row">
+				<input type="submit" value="Save">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
