@@ -1,0 +1,78 @@
+#container {
+	margin: auto;
+	width: 60%;
+}
+
+.left-container {
+	display: inline;
+	float: left;
+	width: 50%;
+}
+
+.header {
+	margin: 20px;
+	margin-bottom : 50px;
+}
+.img-left{
+	float: left;
+	margin-right : 20px;
+}
+body {
+	margin-left: 15px;
+	background-color: #202020;
+	color: white;
+	font-family: cursive;
+}
+
+.right-container {
+	float: left;
+	width: 50%;
+}
+.text-only{
+	clear : left;
+	margin : 20px;
+}
+
+.left-move {
+	display: inline;
+	float: left;
+	width: 150px;
+}
+
+.section-2-text {
+	margin : 20px;
+}
+.other-services{
+	margin-left:20px;
+}
+.checkbox{
+	margin-bottom : 10px;
+}
+.hr-line{
+	margin-top : 30px;
+}
+.dropdown{
+	width : 200px;
+	border-radius: 15px;
+	margin-left : 20px;
+}
+.dropdown1{
+	width : 150px;
+	border-radius: 15px;
+}
+.img-pdf{
+	height:50px;
+	width : 50px;
+}
+.btn{
+	background-color:yellow;
+	border-radius: 15px;
+	width : 150px;
+	margin-top  : 20px;
+	font-family: cursive;
+	font-size: 18px;
+}
+
+.row {
+	margin: 20px;
+}
