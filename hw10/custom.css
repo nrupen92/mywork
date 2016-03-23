@@ -1,78 +1,257 @@
-#container {
-	margin: auto;
-	width: 60%;
+
+
+@media screen and (max-width: 360px) {
+	.col-xs-1 {
+		display: none;
+	}
+	body {
+		color: white !important;
+		font-family: cursive;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#666666+0,141414+0,5a5a5a+0,727272+0,242424+1,242424+28,3d3d3d+46,3d3d3d+46,3d3d3d+47,3d3d3d+47,3d3d3d+52,262626+72,262626+72,262626+86,2e2e2e+97,2e2e2e+97,2e2e2e+100,262626+100,3c3c3c+100,262626+101,3d3d3d+101 */
+		background: #666666; /* Old browsers */
+		background: -moz-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%, #727272
+			0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%,
+			#727272 0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%,
+			#3d3d3d 47%, #3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%,
+			#262626 86%, #2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%,
+			#3c3c3c 100%, #262626 101%, #3d3d3d 101%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #666666 0%, #141414 0%, #5a5a5a 0%, #727272 0%
+			, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666',
+			endColorstr='#3d3d3d', GradientType=1); /* IE6-9 */
+	}
+	img {
+		height: 35px;
+		width: 36px;
+		margin-top: 35px;
+	}
+	.hearedtext {
+		padding-top: 45px;
+	}
+	.hearedtext span {
+		font-size: small;
+	}
+	.formfield input, .formfield select {
+		margin-left: 30px;
+		width: 200px;
+		/*height: 20px;*/
+	}
 }
 
-.left-container {
-	display: inline;
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+	body {
+		color: white !important;
+		font-family: cursive;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#666666+0,141414+0,5a5a5a+0,727272+0,242424+1,242424+28,3d3d3d+46,3d3d3d+46,3d3d3d+47,3d3d3d+47,3d3d3d+52,262626+72,262626+72,262626+86,2e2e2e+97,2e2e2e+97,2e2e2e+100,262626+100,3c3c3c+100,262626+101,3d3d3d+101 */
+		background: #666666; /* Old browsers */
+		background: -moz-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%, #727272
+			0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%,
+			#727272 0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%,
+			#3d3d3d 47%, #3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%,
+			#262626 86%, #2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%,
+			#3c3c3c 100%, #262626 101%, #3d3d3d 101%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #666666 0%, #141414 0%, #5a5a5a 0%, #727272 0%
+			, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666',
+			endColorstr='#3d3d3d', GradientType=1); /* IE6-9 */
+	}
+	img {
+		height: 35px;
+		width: 36px;
+		margin-top: 35px;
+	}
+	.hearedtext {
+		padding-top: 45px;
+	}
+	.hearedtext span {
+		font-size: small;
+	}
+	.formfield input, .formfield select {
+		margin-left: 30px;
+		width: 210px;
+		/*height: 20px;*/
+	}
+}
+/* Small devices (tablets, 768px and up) */
+@media ( min-width : 768px) and (max-width: 991px) {
+	body {
+		color: white !important;
+		font-family: cursive;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#666666+0,141414+0,5a5a5a+0,727272+0,242424+1,242424+28,3d3d3d+46,3d3d3d+46,3d3d3d+47,3d3d3d+47,3d3d3d+52,262626+72,262626+72,262626+86,2e2e2e+97,2e2e2e+97,2e2e2e+100,262626+100,3c3c3c+100,262626+101,3d3d3d+101 */
+		background: #666666; /* Old browsers */
+		background: -moz-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%, #727272
+			0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%,
+			#727272 0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%,
+			#3d3d3d 47%, #3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%,
+			#262626 86%, #2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%,
+			#3c3c3c 100%, #262626 101%, #3d3d3d 101%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #666666 0%, #141414 0%, #5a5a5a 0%, #727272 0%
+			, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666',
+			endColorstr='#3d3d3d', GradientType=1); /* IE6-9 */
+	}
+	img {
+		height: 55px;
+		width: 56px;
+		margin-top: 45px;
+	}
+	.hearedtext {
+		padding-top: 55px;
+	}
+	.hearedtext span {
+		font-size: x-large;
+	}
+	.formfield input, .formfield select {
+		margin-left: 30px;
+		width: 315px;
+		/*height: 20px;*/
+	}
+}
+/* tablets/desktops and up ----------- */
+@media ( min-width : 992px) and (max-width: 1199px) {
+	body {
+		color: white !important;
+		font-family: cursive;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#666666+0,141414+0,5a5a5a+0,727272+0,242424+1,242424+28,3d3d3d+46,3d3d3d+46,3d3d3d+47,3d3d3d+47,3d3d3d+52,262626+72,262626+72,262626+86,2e2e2e+97,2e2e2e+97,2e2e2e+100,262626+100,3c3c3c+100,262626+101,3d3d3d+101 */
+		background: #666666; /* Old browsers */
+		background: -moz-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%, #727272
+			0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%,
+			#727272 0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%,
+			#3d3d3d 47%, #3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%,
+			#262626 86%, #2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%,
+			#3c3c3c 100%, #262626 101%, #3d3d3d 101%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #666666 0%, #141414 0%, #5a5a5a 0%, #727272 0%
+			, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666',
+			endColorstr='#3d3d3d', GradientType=1); /* IE6-9 */
+	}
+	img {
+		height: 77px;
+		width: 76px;
+		margin-top: 35px;
+	}
+	.hearedtext {
+		padding-top: 55px;
+	}
+	.hearedtext span {
+		font-size: xx-large;
+	}
+	.formfield input, .formfield select {
+		margin-left: 30px;
+		width: 285px;
+		/*height: 20px;*/
+	}
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+	body {
+		color: white !important;
+		font-family: cursive;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#666666+0,141414+0,5a5a5a+0,727272+0,242424+1,242424+28,3d3d3d+46,3d3d3d+46,3d3d3d+47,3d3d3d+47,3d3d3d+52,262626+72,262626+72,262626+86,2e2e2e+97,2e2e2e+97,2e2e2e+100,262626+100,3c3c3c+100,262626+101,3d3d3d+101 */
+		background: #666666; /* Old browsers */
+		background: -moz-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%, #727272
+			0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #666666 0%, #141414 0%, #5a5a5a 0%,
+			#727272 0%, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%,
+			#3d3d3d 47%, #3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%,
+			#262626 86%, #2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%,
+			#3c3c3c 100%, #262626 101%, #3d3d3d 101%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #666666 0%, #141414 0%, #5a5a5a 0%, #727272 0%
+			, #242424 1%, #242424 28%, #3d3d3d 46%, #3d3d3d 46%, #3d3d3d 47%,
+			#3d3d3d 47%, #3d3d3d 52%, #262626 72%, #262626 72%, #262626 86%,
+			#2e2e2e 97%, #2e2e2e 97%, #2e2e2e 100%, #262626 100%, #3c3c3c 100%,
+			#262626 101%, #3d3d3d 101%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666',
+			endColorstr='#3d3d3d', GradientType=1); /* IE6-9 */
+	}
+	img {
+		height: 77px;
+		width: 71px;
+		margin-top: 35px;
+	}
+	.hearedtext {
+		padding-top: 55px;
+	}
+	.hearedtext span {
+		font-size: xx-large;
+	}
+	.formfield input, .formfield select {
+		margin-left: 30px;
+		width: 290px;
+		/*height: 20px;*/
+	}
+}
+.container {
+	/*margin: auto;
+    width: 60%;*/
+	
+}
+
+.pdfimage {
+	float: left;
+}
+
+.pdetails {
+	float: left;
+	width: 110px;
+}
+
+#personalDetails {
+	/*height: 260px;*/
+	
+}
+
+.leftfields, .rightfields {
 	float: left;
 	width: 50%;
 }
 
-.header {
-	margin: 20px;
-	margin-bottom : 50px;
-}
-.img-left{
-	float: left;
-	margin-right : 20px;
-}
-body {
-	margin-left: 15px;
-	background-color: #202020;
-	color: white;
-	font-family: cursive;
-}
-
-.right-container {
-	float: left;
-	width: 50%;
-}
-.text-only{
-	clear : left;
-	margin : 20px;
-}
-
-.left-move {
-	display: inline;
-	float: left;
+#savebtn {
+	margin-top: 20px;
+	background-color: yellow;
 	width: 150px;
-}
-
-.section-2-text {
-	margin : 20px;
-}
-.other-services{
-	margin-left:20px;
-}
-.checkbox{
-	margin-bottom : 10px;
-}
-.hr-line{
-	margin-top : 30px;
-}
-.dropdown{
-	width : 200px;
-	border-radius: 15px;
-	margin-left : 20px;
-}
-.dropdown1{
-	width : 150px;
-	border-radius: 15px;
-}
-.img-pdf{
-	height:50px;
-	width : 50px;
-}
-.btn{
-	background-color:yellow;
-	border-radius: 15px;
-	width : 150px;
-	margin-top  : 20px;
-	font-family: cursive;
-	font-size: 18px;
-}
-
-.row {
-	margin: 20px;
+	border-radius: 10px;
+	color: black;
 }
