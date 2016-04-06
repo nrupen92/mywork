@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Google Web Form</title>
+</head>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+<body>
+	<div id="success">
+		
+	</div>
+	<h1>Online Jukebox</h1>
+	<div id="error">
+	</div>
+	
+	<form method="post" id="googleForm" target="_self" action="javascript: postData()" onsubmit="return validate()">
+		<div>
+			<div class="row">
+				<lable>Select a song</lable>
+				<br> <input type="radio" name="songs" value="Song 1" />Song 1 <br>
+				<input type="radio" name="songs" value="Song 2" />Song 2 <br> <input
+					type="radio" name="songs" value="Song 3" />Song 3 <br> <input
+					type="radio" name="songs" value="Song 4" />Song 4 <br> <input
+					type="radio" name="songs" value="Song 5" />Song 5
+			</div>
+			<br>
+			<div class="row">
+				<lable>Credit Card Number : </lable>
+				<input type="text" name="creditCardNumber" id="creditCardNumber"/>
+			</div>
+			<br>
+			<div>
+				<input type="submit" value="submit"> <input type="reset"
+					value="reset" />
+			</div>
+		</div>
+	</form>
+</body>
+<script>
+	function postData(){
+		
+		var songs= $('input:radio[name=songs]:checked').val();
+		var creditCard = $("#creditCardNumber").val();
+		$.ajax({
+			url : "https://docs.google.com/forms/d/1sTvnA0ckX5s2DXpaq8-eYYBRdJnZ-9cElc3lFwlvh9c/formResponse",
+			data : {'entry.518280655': songs, 'entry.827092139': creditCard},
+			type : 'POST',
+			dataType : "xml",
+			xhrFields: {
+	            withCredentials: true
+	        },
+	        statusCode: {
+	            0: function () {
+	                document.getElementById("success").innerHTML = "Your form has been submitted!";
+	                //window.location.replace("ThankYou.html");
+	            },
+	            200: function () {
+	                document.getElementById("success").innerHTML = "Your form has been submitted!";
+	                console.log("Success");
+	                //window.location.replace("ThankYou.html");
+	            }
+	        }
+		});	
+		
+	}
+	function validate(){
+		
+		var reg = /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/;
+		var s = $("#creditCardNumber").val();
+		if(s==null || s== "" || !reg.test(s)){
+			$("#error").html("Invalid card number");
+				return false;
+		}else{
+			$("#error").html("");
+			return true;
+		}
+		
+		
+		
+	}
+</script>
+</html>
