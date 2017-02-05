@@ -11,4 +11,8 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 
 
-mail('rrjoshi92@gmail.com', $subject, $message, $headers);
+if(mail('rrjoshi92@gmail.com', $subject, $message, $headers)){
+	return json_encode({'status':TRUE});
+}else{
+return json_encode({'status':FALSE});
+}
