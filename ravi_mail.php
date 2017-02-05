@@ -12,7 +12,7 @@ $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
  $return_data = new stdClass();
-$return_data->name= 'nrupen';
+
 
 if(mail('rrjoshi92@gmail.com', $subject, $message, $headers)){
     $return_data->status = TRUE;
