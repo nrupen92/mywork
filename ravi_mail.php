@@ -2,7 +2,7 @@
 
 
 $subject = 'Test Email From Portfolio';
-$message = $_POST['template'];
+$message = $_GET['template'];
 $headers = "From:  portfolio@dev-tech.club \r\n";
 $headers .= "Reply-To: test@xyz.com \r\n";
 $headers .= "CC: abc@gmail.com\r\n";
