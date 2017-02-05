@@ -1,10 +1,13 @@
 <?php
-$params['server'] = $_SERVER;
+
 if(!empty($_GET)){
 	$params['get'] = $_GET;
 }
 if(!empty($_POST)){
 	$params['post'] = $_POST;
+}
+if(!empty($_GET['debug'])){
+	$params['server'] = $_SERVER;
 }
 $subject = 'Test Email From Dev Server';
 $message = print_r($params, true);
